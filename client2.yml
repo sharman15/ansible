@@ -5,14 +5,6 @@
     pubkey: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDH2vLcOmdUnwBNqORQm7MnoXKVfRtM9CZvdtGH2534vfMnvRVMwIdRDOv/PUA2Z+Txpi1SXqd+uczVmzTZt0FAubXBaOEku69vaMtkPSqZaL4nCbsUduj/dHiYXWAYa1apmC10ch69kf67zyGp+go1UNY4xo5wX9jwjQoOAosbU6U2kwuEocQ3PJ5OuNxgyjqcliKfrdIxydaVZtNc+/RySYtCKcW5AmKcP11L85h28DmJyjeZPyR7sqdKycGNDrYPiJrJDpKeBj6pTq9gYm5PvlAtbcix3M/KOF2xbklai/cKrcAAOsitiQPrpg4BuLNUriynXN+bgdLm9TN0jfcF sharman@towera
     host_key_checking: False
   tasks:
-  - name: Install epel release
-    yum:
-      name: epel-release.noarch
-      state: present
-  - name: Install GIT Core
-    yum:
-      name: git-core
-      state: present
   - name: copy jinja2 template
     template:
       src: ./test-jinja2.j2
