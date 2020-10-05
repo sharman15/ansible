@@ -8,15 +8,15 @@
   - name: Install epel release
     yum:
       name: epel-release.noarch
-      state: installed
+      state: present
   - name: Install ansible
     yum:
       name: ansible
-      state: installed
+      state: present
   - name: Install GIT Core
     yum:
       name: git-core
-      state: installed
+      state: present
   - name: copy jinja2 template
     template:
       src: ./test-jinja2.j2
