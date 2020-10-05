@@ -9,10 +9,6 @@
     yum:
       name: epel-release.noarch
       state: present
-  - name: Install ansible
-    yum:
-      name: ansible
-      state: present
   - name: Install GIT Core
     yum:
       name: git-core
